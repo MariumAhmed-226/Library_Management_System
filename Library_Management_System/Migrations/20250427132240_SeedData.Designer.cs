@@ -3,6 +3,7 @@ using System;
 using Library_Management_System.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Library_Management_System.Migrations
 {
     [DbContext(typeof(NeondbContext))]
-    partial class NeondbContextModelSnapshot : ModelSnapshot
+    [Migration("20250427132240_SeedData")]
+    partial class SeedData
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -247,81 +250,81 @@ namespace Library_Management_System.Migrations
                         {
                             Id = 1,
                             BookId = 1,
-                            BorrowDate = new DateTime(2023, 4, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            BorrowDate = new DateTime(2025, 4, 17, 13, 22, 39, 706, DateTimeKind.Utc).AddTicks(4192),
                             BorrowerName = "Ayesha Khan",
-                            ReturnDate = new DateTime(2023, 4, 6, 0, 0, 0, 0, DateTimeKind.Utc)
+                            ReturnDate = new DateTime(2025, 4, 22, 13, 22, 39, 706, DateTimeKind.Utc).AddTicks(4759)
                         },
                         new
                         {
                             Id = 2,
                             BookId = 2,
-                            BorrowDate = new DateTime(2023, 3, 25, 0, 0, 0, 0, DateTimeKind.Utc),
+                            BorrowDate = new DateTime(2025, 4, 12, 13, 22, 39, 706, DateTimeKind.Utc).AddTicks(5962),
                             BorrowerName = "Fatima Ali",
-                            ReturnDate = new DateTime(2023, 3, 30, 0, 0, 0, 0, DateTimeKind.Utc)
+                            ReturnDate = new DateTime(2025, 4, 17, 13, 22, 39, 706, DateTimeKind.Utc).AddTicks(5964)
                         },
                         new
                         {
                             Id = 3,
                             BookId = 3,
-                            BorrowDate = new DateTime(2023, 3, 20, 0, 0, 0, 0, DateTimeKind.Utc),
+                            BorrowDate = new DateTime(2025, 4, 7, 13, 22, 39, 706, DateTimeKind.Utc).AddTicks(5967),
                             BorrowerName = "Zainab Ahmed",
-                            ReturnDate = new DateTime(2023, 3, 25, 0, 0, 0, 0, DateTimeKind.Utc)
+                            ReturnDate = new DateTime(2025, 4, 12, 13, 22, 39, 706, DateTimeKind.Utc).AddTicks(5967)
                         },
                         new
                         {
                             Id = 4,
                             BookId = 4,
-                            BorrowDate = new DateTime(2023, 3, 15, 0, 0, 0, 0, DateTimeKind.Utc),
+                            BorrowDate = new DateTime(2025, 4, 2, 13, 22, 39, 706, DateTimeKind.Utc).AddTicks(5969),
                             BorrowerName = "Hira Malik",
-                            ReturnDate = new DateTime(2023, 3, 20, 0, 0, 0, 0, DateTimeKind.Utc)
+                            ReturnDate = new DateTime(2025, 4, 7, 13, 22, 39, 706, DateTimeKind.Utc).AddTicks(5969)
                         },
                         new
                         {
                             Id = 5,
                             BookId = 5,
-                            BorrowDate = new DateTime(2023, 3, 10, 0, 0, 0, 0, DateTimeKind.Utc),
+                            BorrowDate = new DateTime(2025, 3, 28, 13, 22, 39, 706, DateTimeKind.Utc).AddTicks(5971),
                             BorrowerName = "Sana Sheikh",
-                            ReturnDate = new DateTime(2023, 3, 15, 0, 0, 0, 0, DateTimeKind.Utc)
+                            ReturnDate = new DateTime(2025, 4, 2, 13, 22, 39, 706, DateTimeKind.Utc).AddTicks(5971)
                         },
                         new
                         {
                             Id = 6,
                             BookId = 6,
-                            BorrowDate = new DateTime(2023, 3, 5, 0, 0, 0, 0, DateTimeKind.Utc),
+                            BorrowDate = new DateTime(2025, 3, 23, 13, 22, 39, 706, DateTimeKind.Utc).AddTicks(5973),
                             BorrowerName = "Mariam Javed",
-                            ReturnDate = new DateTime(2023, 3, 10, 0, 0, 0, 0, DateTimeKind.Utc)
+                            ReturnDate = new DateTime(2025, 3, 28, 13, 22, 39, 706, DateTimeKind.Utc).AddTicks(5973)
                         },
                         new
                         {
                             Id = 7,
                             BookId = 7,
-                            BorrowDate = new DateTime(2023, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            BorrowDate = new DateTime(2025, 3, 18, 13, 22, 39, 706, DateTimeKind.Utc).AddTicks(5975),
                             BorrowerName = "Aqsa Riaz",
-                            ReturnDate = new DateTime(2023, 3, 6, 0, 0, 0, 0, DateTimeKind.Utc)
+                            ReturnDate = new DateTime(2025, 3, 23, 13, 22, 39, 706, DateTimeKind.Utc).AddTicks(5975)
                         },
                         new
                         {
                             Id = 8,
                             BookId = 8,
-                            BorrowDate = new DateTime(2023, 2, 25, 0, 0, 0, 0, DateTimeKind.Utc),
+                            BorrowDate = new DateTime(2025, 3, 13, 13, 22, 39, 706, DateTimeKind.Utc).AddTicks(5977),
                             BorrowerName = "Nimra Shah",
-                            ReturnDate = new DateTime(2023, 3, 2, 0, 0, 0, 0, DateTimeKind.Utc)
+                            ReturnDate = new DateTime(2025, 3, 18, 13, 22, 39, 706, DateTimeKind.Utc).AddTicks(5977)
                         },
                         new
                         {
                             Id = 9,
                             BookId = 9,
-                            BorrowDate = new DateTime(2023, 2, 20, 0, 0, 0, 0, DateTimeKind.Utc),
+                            BorrowDate = new DateTime(2025, 3, 8, 13, 22, 39, 706, DateTimeKind.Utc).AddTicks(5978),
                             BorrowerName = "Iqra Yousaf",
-                            ReturnDate = new DateTime(2023, 2, 25, 0, 0, 0, 0, DateTimeKind.Utc)
+                            ReturnDate = new DateTime(2025, 3, 13, 13, 22, 39, 706, DateTimeKind.Utc).AddTicks(5979)
                         },
                         new
                         {
                             Id = 10,
                             BookId = 10,
-                            BorrowDate = new DateTime(2023, 2, 15, 0, 0, 0, 0, DateTimeKind.Utc),
+                            BorrowDate = new DateTime(2025, 3, 3, 13, 22, 39, 706, DateTimeKind.Utc).AddTicks(5980),
                             BorrowerName = "Rabia Noor",
-                            ReturnDate = new DateTime(2023, 2, 20, 0, 0, 0, 0, DateTimeKind.Utc)
+                            ReturnDate = new DateTime(2025, 3, 8, 13, 22, 39, 706, DateTimeKind.Utc).AddTicks(5981)
                         });
                 });
 
