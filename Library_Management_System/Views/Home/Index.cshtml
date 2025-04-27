@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    body {
+        font-family: 'Cursive', Arial, sans-serif;
+        background-color: #ffe4e1; /* Light pink background */
+        color: #6a1b9a; /* Deep purple text */
+        margin: 0;
+        padding: 0;
+    }
+    .text-center {
+        text-align: center;
+        padding: 50px 20px;
+    }
+    h1 {
+        font-size: 3rem;
+        color: #d81b60; /* Bright pink */
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 1.2rem;
+        color: #6a1b9a;
+    }
+    a {
+        color: #ba68c8; /* Soft purple */
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    a:hover {
+        color: #d81b60; /* Bright pink on hover */
+    }
+    .button-group {
+        margin-top: 30px;
+    }
+    .button-group a {
+        display: inline-block;
+        background-color: #f8bbd0; /* Light pink button */
+        color: #6a1b9a;
+        padding: 10px 20px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 0 10px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    .button-group a:hover {
+        background-color: #d81b60; /* Bright pink on hover */
+        color: white;
+        transform: scale(1.1);
+    }
+</style>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to the Library</h1>
+    <p>Explore the world of knowledge with our collection.</p>
+    <div class="button-group">
+        <a href="/Books">Books</a>
+        <a href="/Authors">Authors</a>
+        <a href="/Borrowrecords">Borrowed</a>
+    </div>
+</div>
